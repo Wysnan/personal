@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "_Error";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Metro.Models.Error
+<script language="javascript" type="text/javascript">
+    $(document).ready(function () {
+        sleep(2000);
+        var url="/@Model.Controll/@Model.Action";
+        window.location=url;
+        //alert("") $.delay(800).
+    });
+
+    function sleep(numberMillis) {
+        var now = new Date();
+        var exitTime = now.getTime() + numberMillis;
+        while (true) {
+            now = new Date();
+            if (now.getTime() > exitTime) return;
+        }
+    }
+</script>
+<div class="content-03">
+    <h2 style="font-family: 微软雅黑; padding: 15px 0 0 0; text-indent: 15px;">
+        出错了</h2>
+</div>
+<h2>
+    @Model.Message
+</h2>

@@ -1,0 +1,2105 @@
+﻿/* 20110216  */
+body
+{
+    color: #000;
+    font-size: 15px;
+    background: #FFF url(images/021611_bg.gif) repeat-x 0 0; /* background-color:#320442;*/
+    text-align: center;
+}
+a:link, a:active, a:visited
+{
+    color: #3671a1;
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+
+/* first image for renren sharing  */
+.thefirestimage
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
+/* Main Container */
+#container
+{
+    margin: 0 auto 0 auto;
+    padding: 0 0 20px 0;
+    width: 988px;
+    text-align: left;
+}
+
+/* header */
+.header
+{
+    margin: 0;
+    padding: 0;
+    height: 30px;
+}
+.header ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.header li
+{
+    display: inline;
+    float: left;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 1.0em;
+}
+.header li a
+{
+    border: none;
+}
+.header a:link, .header a:visited, .header a:active
+{
+    padding: 0;
+    color: #FFF;
+    text-decoration: none;
+    line-height: 1.0em;
+}
+
+/* Main Navigation */
+.header .nav-01
+{
+    margin: 0;
+    padding: 0 0 0 3px;
+    width: 480px;
+    height: 30px;
+    float: left;
+}
+.header .nav-01 li
+{
+    font-family: 微软雅黑;
+    margin: 0;
+    padding: 7px 20px 0 0;
+    height: 24px;
+}
+
+
+/* share icons */
+.header .share-01
+{
+    margin: 0;
+    padding: 0 0 0 0;
+    width: 183px;
+    height: 30px;
+    float: right;
+}
+.header .share-01 li
+{
+    margin: 0;
+    padding: 7px 0 0 5px;
+    height: 24px;
+}
+
+/* footer */
+.footer
+{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 80px;
+    width: 986px;
+}
+
+.footer .box-00
+{
+    margin: 0;
+    padding: 50px 0 0 0;
+    text-align: center;
+}
+.footer ul
+{
+    margin: 0;
+    padding: 0 0 0 0;
+    list-style: none;
+    float: right;
+}
+.footer li
+{
+    display: inline;
+    float: left;
+    color: #9ea2a2;
+    font-size: 12px;
+    line-height: 1.0em;
+}
+.footer li a
+{
+    text-decoration: none;
+    color: #9ea2a2;
+}
+.header a:visited, .header a:active
+{
+    padding: 0;
+    line-height: 1.0em;
+}
+
+.footer .logo_windows
+{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    float: left;
+}
+
+.footer .aside-01
+{
+    margin: 0;
+    padding: 7px 0 0 0;
+    width: 986px;
+    float: left;
+    font-family: 宋体;
+    color: #9ea2a2;
+}
+.footer .aside-01 li
+{
+    margin: 0;
+    padding: 0 10px 0 10px;
+    border-left: 1px solid #9ea2a2;
+}
+.footer .aside-01 li:first-child
+{
+    border-left: none;
+}
+.bottom-sep
+{
+    position: relative;
+    top: 40px;
+    float: left;
+    width: 984px;
+    height: 1px;
+    background-image: url(images/sep_bottom.png);
+    background-repeat: repeat-x;
+}
+
+.videoplayer
+{
+    top: 7px;
+    z-index: 999;
+    left: 9px;
+    width: 350px;
+    float: left;
+    position: relative;
+    height: 300px;
+}
+
+#scrollpinglun
+{
+    padding: 0 0 0 0;
+    margin: 0px;
+    width: 300px;
+    height: 300px;
+    font-size: 12px;
+}
+#scrollpinglun ul
+{
+    padding: 0 0 0 0;
+    margin: 0px;
+    height: 300px;
+    width: 270px;
+}
+#scrollpinglun li
+{
+    line-height: 20px;
+    width: 270px;
+    list-style-type: none;
+    display: block;
+    font-size: 12px;
+}
+
+/* english font type */
+.en_font_type
+{
+    font-family: Arial;
+}
+.en_font_type_bold
+{
+    font-family: Arial;
+    font-weight: bold;
+}
+.font_all_type
+{
+    font-weight: bold;
+}
+
+/* share most */
+
+.sharemost_bt_all
+{
+    padding: 0 0 0 0;
+    top: 7px;
+    position: relative;
+    z-index: 999;
+    width: 160px;
+    height: 35px;
+}
+.sharemost_bt_all li
+{
+    padding: 0 0 0 0;
+    list-style-type: none;
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+/* hero area */
+.hero
+{
+    margin: 0;
+    padding: 0;
+    height: 103px;
+}
+
+/* Main Navigation */
+.hero .aside-01
+{
+    margin: 0;
+    padding: 0 0 0 3px;
+    width: 476px;
+    height: 103px;
+    float: left;
+}
+.hero .aside-01 h1
+{
+    padding: 40px 0 0 0;
+}
+.hero .aside-01 h6
+{
+    padding: 0 0 0 0;
+    font-weight: 100;
+    font-size: 14px;
+    color: #5477bb;
+    line-height: 1.0em;
+}
+
+/* share icons */
+.hero .aside-02
+{
+    margin: 0;
+    padding: 10px 0 0 0;
+    width: 147px;
+    height: 93px;
+    float: right;
+    text-align: center;
+}
+.hero .aside-02 .download-button
+{
+    background: url(images/dowload_bt.png) no-repeat 0 0;
+    width: 133px;
+    height: 31px;
+    margin-left: 11px;
+}
+.hero .aside-02 .download-button a
+{
+    font-size: 14px;
+    color: #fff;
+    line-height: 22px;
+    text-decoration: none;
+}
+.hero .aside-02 .message-box
+{
+    padding: 0;
+    display: none;
+}
+
+/* logos */
+.hero .aside-03
+{
+    margin: 0;
+    padding: 10px 0 0 0;
+    width: 347px;
+    height: 90px;
+    float: left;
+}
+
+/* hero area */
+.content-01
+{
+    margin: 0;
+    padding: 0;
+    height: 410px;
+    width: 988px;
+    background: url(images/021611_bg_home-top.png) no-repeat 0 0;
+}
+.content-01 .aside-01
+{
+    margin: 0;
+    padding: 0 15px 0 30px;
+    width: 228px;
+    height: 410px;
+    float: left;
+}
+.content-01 .aside-01 h2
+{
+    padding: 37px 0 10px 0;
+    font-weight: bold;
+    font-family: 微软雅黑;
+    font-size: 22px;
+    color: #FFF;
+    line-height: 1.389em;
+}
+.content-01 .aside-01 p
+{
+    padding: 17px 0 20px 0;
+    width: 209px;
+    font-family: 微软雅黑;
+    color: #FFF;
+    line-height: 1.470em;
+    text-align: left;
+}
+.content-01 .aside-01 a:link, .content-01 .aside-01 a:visited, .content-01 .aside-01 a:active
+{
+    color: #f7921e;
+}
+
+.content-01 .aside-02 ul.iconNavigation
+{
+    list-style: none inside none;
+    display: inline;
+    margin: 10px 0 0 35px;
+    top: 10px;
+    position: relative;
+}
+.content-01 .aside-02 ul.iconNavigation li
+{
+    margin: 0 0 0 -3px;
+    padding: 0;
+    display: inline;
+}
+.content-01 .aside-02 ul.iconNavigation li a
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: 0;
+}
+.content-01 .aside-02 ul.iconNavigation li a.map-tab
+{
+    width: 37px;
+}
+.content-01 .aside-02 ul.iconNavigation li a.list-tab
+{
+    width: 35px;
+}
+.content-01 .aside-02 ul.iconNavigation li a.chart-tab
+{
+    width: 35px;
+}
+.content-01 .aside-02 .icon-tabs
+{
+    width: 475px;
+    margin: 15px 0 0 18px;
+}
+
+/* donut chart graphic */
+.content-01 .aside-03
+{
+    margin: 4px 0 0 0;
+    padding: 0;
+    width: 205px;
+    height: 406px;
+    background: url('images/033111-total_chart-bg.png') no-repeat 0 0;
+    float: left;
+}
+/* aside-03 content items */
+.content-01 .aside-03 .tagline
+{
+    padding: 0 0 0 3px;
+    width: 200px;
+    position: absolute;
+    top: 320px;
+    left: 0;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+/* YoY background */
+.content-01 .aside-03 .box
+{
+    margin: 27px 0 0 0;
+    padding: 8px 0 0 0;
+    width: 179px;
+    height: 124px;
+    background: url(images/033111-perc_bg_blank.gif) no-repeat 0 0;
+    text-align: center;
+    position: relative;
+}
+.content-01 .aside-03 h3
+{
+    font-size: 28px;
+    color: #FFF;
+    line-height: 1.0em;
+    text-align: center;
+    text-align: left;
+    position: absolute;
+    top: 22px;
+    left: 20px;
+}
+.content-01 .aside-03 h6
+{
+    padding: 0px 0 0 0px;
+    font-size: 12px;
+    line-height: 1.2em;
+    font-weight: bold;
+    position: absolute;
+    right: 25px;
+    top: 19px;
+    color: #fff;
+}
+.content-01 .aside-03 span
+{
+    color: #FFFFFF;
+    display: block;
+    color: #183567;
+    font-weight: bold;
+    position: absolute;
+    right: 25px;
+    top: 41px;
+}
+
+.content-01 .aside-03 .box .donut
+{
+    margin: 0;
+    padding: 0;
+    height: 190px;
+    width: 190px;
+    position: absolute;
+    left: 5px;
+    top: 190px;
+    z-index: 10;
+    cursor: default;
+}
+.content-01 .aside-03 .box .donut a
+{
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: 190px;
+    width: 190px;
+    outline: none;
+}
+
+
+
+
+
+/* hero area buckets */
+.content-02
+{
+    margin: 0;
+    padding: 0 0 0 3px;
+    height: 1170px;
+    width: 981px;
+    background-color: White;
+    background-repeat: repeat-y;
+}
+
+/* buckets */
+.content-02 .space
+{
+    height: 33px;
+}
+.content-02 .asideleft
+{
+    margin: 0px;
+    padding: 0 0 0 0;
+    width: 650px;
+    height: 31px;
+    float: left;
+}
+.content-02 .asideleft .title_main
+{
+    margin: 0px;
+    padding: 0 0 0 0;
+    width: 650px;
+    height: 31px;
+    background-color: #3795d2;
+    background-repeat: no-repeat;
+}
+.content-02 .asideleft h1
+{
+    margin: 0px;
+    padding: 2px 0 0 10px;
+    height: 31px;
+    font-size: 24px;
+    color: White;
+    font-weight: normal;
+}
+.content-02 .asideleft .contentdetail_thanks
+{
+    margin: 0px;
+    padding: 2px 0 0 9px;
+    width: 639px;
+    height: 316px;
+    background-color: White;
+    float: left;
+}
+.content-02 .asideleft .contentdetail_thanks .thanks_text
+{
+    width: 282px;
+    height: 316px;
+    float: left;
+}
+.content-02 .asideleft .contentdetail_thanks .thanks_text p
+{
+    margin: 0px;
+    padding: 28px 0 0 0;
+    width: 275px;
+    font-family: 微软雅黑;
+    font-size: 16px;
+    color: #ffa800;
+}
+.content-02 .asideleft .contentdetail_thanks .thanks_text p.thanks_brief
+{
+    margin: 0px;
+    padding: 28px 0 0 0;
+    width: 275px;
+    text-align: inherit;
+    font-size: 12px;
+    color: #555454;
+    line-height: 1.490em;
+}
+.content-02 .asideleft .contentdetail_thanks .thanks_text p.thanks_brief_ptwo
+{
+    margin: 0px;
+    padding: 12px 0 0 0;
+    width: 275px;
+    text-align: inherit;
+    font-size: 12px;
+    color: #555454;
+    line-height: 1.490em;
+}
+.content-02 .asideleft .contentdetail_thanks .thanks_text input
+{
+    margin-top: 50px;
+    padding: 0 0 0 0;
+    width: 140px;
+    height: 27px;
+    background-image: url(images/bt_view_more.png);
+    border: none;
+    cursor: pointer;
+}
+.content-02 .asideleft .contentdetail_para_v_two
+{
+    margin: 0px;
+    padding: 0 0 0 0;
+    width: 648px;
+    height: 236px;
+    float: left;
+    background-color: White;
+}
+.content-02 .asideleft .contentdetail_para_v_two .leftimg
+{
+    margin: 0px;
+    padding: 0 0 0 0;
+    width: 338px;
+    height: 236px;
+    background-image: url(images/safe_img.jpg);
+    background-repeat: no-repeat;
+    float: left;
+}
+.content-02 .asideleft .contentdetail_para_v_two .right_text
+{
+    margin: 0px;
+    padding: 41px 0 0 0;
+    width: 277px;
+    height: 195px;
+    float: right;
+}
+.content-02 .asideleft .contentdetail_para_v_two .right_text ul
+{
+    margin: 0px;
+    padding: 0 0 0 0;
+}
+.content-02 .asideleft .contentdetail_para_v_two .right_text ul li
+{
+    margin: 0px;
+    padding: 0 0 0 0;
+    font-size: 12px;
+    color: #555454;
+    line-height: 18px;
+    height: 20px;
+    list-style-type: none;
+}
+.content-02 .asideleft .contentdetail_para_v_two .right_text input
+{
+    margin-top: 24px;
+    margin-left: 8px;
+    padding: 0 0 0 0;
+    width: 173px;
+    height: 48px;
+    background-image: url(images/upgrade_ie8_bt.png);
+    border: none;
+    cursor: pointer;
+}
+.content-02 .asideleft .contentdetail_para_v_two .right_text a.bt_upgrade-8
+{
+    width: 173px;
+    height: 48px;
+    border: none;
+    cursor: pointer;
+}
+.content-02 .asideleft .contentdetail_para_v_two .right_text a.bt_upgrade-8 img
+{
+    margin-top: 24px;
+    margin-left: 8px;
+    padding: 0 0 0 0;
+}
+.content-02 .asideleft .contentdetail_para_v_two .right_text p
+{
+    margin: 0px;
+    padding: 10px 0 0 0;
+    width: 270px;
+    text-align: left;
+    font-size: 11px;
+    color: #acacac;
+}
+
+.content-02 .asideleft .contentdetail_para_v_two_ie9
+{
+    margin: 0px;
+    padding: 0 0 0 0;
+    width: 648px;
+    height: 247px;
+    background-image: url(images/ie9_left_img.jpg);
+    background-repeat: no-repeat;
+    float: left;
+}
+.content-02 .asideleft .contentdetail_para_v_two_ie9 .leftimg
+{
+    margin: 0px;
+    padding: 0 0 0 0;
+    width: 338px;
+    height: 236px;
+    float: left;
+}
+.content-02 .asideleft .contentdetail_para_v_two_ie9 .right_text
+{
+    margin: 0px;
+    padding: 33px 0 0 0;
+    width: 277px;
+    height: 214px;
+    float: right;
+}
+.content-02 .asideleft .contentdetail_para_v_two_ie9 .right_text ul
+{
+    margin: 0px;
+    padding: 0 0 0 0;
+}
+.content-02 .asideleft .contentdetail_para_v_two_ie9 .right_text ul li
+{
+    margin: 0px;
+    padding: 0 0 0 0;
+    font-size: 12px;
+    color: #555454;
+    line-height: 18px;
+    height: 20px;
+    list-style-type: none;
+}
+.content-02 .asideleft .contentdetail_para_v_two_ie9 .right_text input
+{
+    margin-top: 38px;
+    margin-left: 8px;
+    padding: 0 0 0 0;
+    width: 173px;
+    height: 48px;
+    background-image: url(images/upgrade_ie9_bt.png);
+    border: none;
+    cursor: pointer;
+}
+.content-02 .asideleft .contentdetail_para_v_two_ie9 .right_text a.bt_upgrade-9
+{
+    width: 173px;
+    height: 48px;
+    border: none;
+    cursor: pointer;
+}
+.content-02 .asideleft .contentdetail_para_v_two_ie9 .right_text a.bt_upgrade-9 img
+{
+    margin-top: 34px;
+    margin-left: 8px;
+    padding: 0 0 0 0;
+}
+.content-02 .asideleft .contentdetail_para_v_two_ie9 .right_text a
+{
+    color: #3795d2;
+    text-decoration: none;
+}
+.content-02 .asideleft .contentdetail_para_v_two_ie9 .right_text p
+{
+    margin: 0px;
+    padding: 14px 0 0 8px;
+    width: 277px;
+    font-size: 12px;
+    color: #3795d2;
+}
+
+.content-02 .asideleft .letterto_para_three
+{
+    margin: 0px;
+    padding: 0 0 0 0;
+    width: 648px;
+    height: 178px;
+    float: left;
+}
+.content-02 .asideleft .letterto_para_three .leftimg
+{
+    margin: 0px;
+    padding: 0 0 0 0;
+    width: 142px;
+    height: 178px;
+    background-image: url(images/letterto_left.png);
+    background-repeat: none;
+    float: left;
+}
+.content-02 .asideleft .letterto_para_three .right_text
+{
+    margin: 0px;
+    padding: 0 0 0 0;
+    width: 506px;
+    height: 162px;
+    float: right;
+}
+.content-02 .asideleft .letterto_para_three .right_text p
+{
+    margin: 0px;
+    padding: 15px 0 0 0;
+    width: 504px;
+    text-align: left;
+    font-size: 12px;
+    color: #555454;
+    line-height: 1.490em;
+}
+.content-02 .asideleft .letterto_para_three .right_text p.paratwo
+{
+    margin: 0px;
+    padding: 8px 0 0 0;
+    width: 504px;
+    font-size: 12px;
+    color: #ffa800;
+    line-height: 1.490em;
+}
+.content-02 .asideleft .letterto_para_three .right_text p.parathree
+{
+    margin: 0px;
+    padding: 8px 0 0 0;
+    width: 504px;
+    font-size: 12px;
+    color: #ffa800;
+    line-height: 1.490em;
+}
+.content-02 .asideleft .letterto_para_three .right_text input
+{
+    margin-right: 2px;
+    padding: 0 0 0 0;
+    width: 100px;
+    height: 26px;
+    background-image: url(images/learn_morebt.png);
+    background-repeat: no-repeat;
+    float: right;
+    border: none;
+    cursor: pointer;
+}
+.content-02 .asideleft .letterto_para_three .right_text a.learnmore_bt
+{
+    width: 100px;
+    height: 26px;
+    float: right;
+    border: none;
+    cursor: pointer;
+}
+.content-02 .asideleft .letterto_para_three .right_text a.learnmore_bt img
+{
+    margin-right: 2px;
+    padding: 0 0 0 0;
+}
+.content-02 .asideright
+{
+    margin-top: -6px;
+    padding: 0 0 0 0;
+    width: 324px;
+    height: 924px;
+    float: right;
+}
+.content-02 .asideright .top
+{
+    margin: 0px;
+    padding: 0 0 0 0;
+    background-image: url(images/right_bg_top.jpg);
+    background-repeat: no-repeat;
+    height: 31px;
+}
+.content-02 .asideright .mid
+{
+    margin: 0px;
+    padding: 0 0 0 0;
+    width: 324px;
+    height: 854px;
+    background-image: url(images/right_bg_mid.jpg);
+    background-repeat: repeat-y;
+}
+.content-02 .asideright .bottom
+{
+    margin: 0px;
+    padding: 0 0 0 0;
+    width: 324px;
+    height: 35px;
+    background-image: url(images/right_bg_bottom.jpg);
+    background-repeat: repeat-y;
+}
+.content-02 .asideright .title_bg
+{
+    position: relative;
+    z-index: 2;
+    left: 6px;
+    top: 30px;
+    background-color: #e1e4e6;
+    background-repeat: repeat-y;
+    width: 314px;
+    height: 33px;
+}
+.content-02 .asideright .title_bg-01
+{
+    position: relative;
+    z-index: 2;
+    left: 6px;
+    top: 5px;
+    background-color: #e1e4e6;
+    background-repeat: repeat-y;
+    width: 314px;
+    height: 33px;
+}
+.content-02 .asideright .img_ie_present
+{
+    position: relative;
+    z-index: 2;
+    left: 6px;
+    top: 12px;
+    width: 313px;
+    height: 152px;
+}
+.content-02 .asideright .join_large_img
+{
+    position: relative;
+    z-index: 2;
+    left: 6px;
+    top: 35px;
+    width: 314px;
+    height: 175px;
+    background-image: url(images/atten_sina_large_img.gif);
+    background-repeat: no-repeat;
+}
+.content-02 .asideright ul
+{
+    margin: 0px;
+    padding: 0 0 0 0;
+}
+
+.content-02 .asideright ul li
+{
+    position: relative;
+    z-index: 2;
+    left: 27px;
+    top: 17px;
+    list-style-type: none;
+    bnfont-size: 12px;
+    color: #555454;
+    width: 279px;
+}
+.content-02 .asideright ul li.sliderText
+{
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    left: 0px;
+    top: 0px;
+    list-style-type: none;
+    font-size: 12px;
+    color: #555454;
+    width: 279px;
+    height: 170px;
+}
+.content-02 .asideright ul li.sliderText p
+{
+    position: relative;
+    z-index: 2;
+    left: 0px;
+    top: 0px;
+    font-size: 12px;
+    color: #555454;
+    width: 279px;
+    line-height: 1.590em;
+}
+.content-02 .asideright p
+{
+    position: relative;
+    z-index: 2;
+    left: 27px;
+    top: 17px;
+    font-size: 12px;
+    color: #555454;
+    width: 279px;
+}
+.content-02 .asideright .space-03
+{
+    position: relative;
+    z-index: 2;
+    list-style-type: none;
+    height: 20px;
+    top: 0px;
+    left: 0px;
+}
+.content-02 .asideright .space-04
+{
+    position: relative;
+    z-index: 2;
+    list-style-type: none;
+    height: 12px;
+}
+.content-02 .asideright .sep-03
+{
+    position: relative;
+    z-index: 2;
+    left: 25px;
+    top: 17px;
+    height: 1px;
+    width: 278px;
+    background-image: url(images/sep_bottom.png);
+    background-repeat: repeat-x;
+}
+.content-02 .asideright input.joinus
+{
+    position: relative;
+    z-index: 3;
+    right: 17px;
+    top: 10px;
+    width: 106px;
+    height: 26px;
+    background-image: url(images/join_bt.png);
+    background-repeat: no-repeat;
+    float: right;
+    border: none;
+    cursor: pointer;
+}
+.content-02 .asideright a.joinus
+{
+    width: 106px;
+    height: 26px;
+    float: right;
+    border: none;
+    cursor: pointer;
+}
+.content-02 .asideright a.joinus img
+{
+    width: 106px;
+    height: 26px;
+}
+.content-02 .asideright input.atten_sina
+{
+    position: relative;
+    z-index: 2;
+    right: 17px;
+    top: 23px;
+    width: 93px;
+    height: 26px;
+    background-image: url(images/atten_bt.png);
+    background-repeat: no-repeat;
+    float: right;
+    border: none;
+    cursor: pointer;
+}
+.content-02 .asideright a.atten_sina
+{
+    width: 93px;
+    height: 26px;
+    float: right;
+    border: none;
+    cursor: pointer;
+}
+.content-02 .asideright a.atten_sina img
+{
+    width: 93px;
+    height: 26px;
+}
+.content-02 .asideright h1
+{
+    margin: 0px;
+    padding: 6px 0 0 15px;
+    font-family: 微软雅黑;
+    font-size: 20px;
+    color: #3795d2;
+    font-weight: normal;
+}
+.content-02 .asideright h2
+{
+    position: relative;
+    z-index: 2;
+    left: 25px;
+    top: 17px;
+    width: 279px;
+    font-family: 微软雅黑;
+    font-size: 14px;
+    color: #3795d2;
+    font-weight: normal;
+}
+.content-02 .aside h3
+{
+    padding: 0 0 4px 0;
+    font-weight: 100;
+    font-family: 'Segoe UI Light' , 'Segoe UI' , Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #5477bb;
+    line-height: 1.0em;
+    text-transform: uppercase;
+}
+.content-02 .aside p
+{
+    padding: 0 0 2px 0;
+    font-size: 12px;
+    color: #000;
+    line-height: 1.167em;
+}
+
+/* fade text*/
+.clear
+{
+    clear: both;
+}
+#first-03
+{
+    display: none;
+}
+
+/* bubble*/
+.towbutton
+{
+    position: relative;
+    z-index: 2;
+    left: 123px;
+    top: 48px;
+    width: 180px;
+    height: 26px;
+}
+.button_sinagz
+{
+    float: left;
+    width: 85px;
+    height: 26px;
+}
+.button_tencent
+{
+    float: right;
+    width: 85px;
+    height: 26px;
+}
+.bubbleInfo a
+{
+    cursor: pointer;
+}
+.popup
+{
+    position: absolute;
+    display: none;
+}
+#Div1
+{
+    margin-left: 92px;
+}
+
+/* space div */
+.space_para_03
+{
+    margin: 0px;
+    padding: 0 0 0 0;
+    height: 18px;
+}
+
+/* paragraph three left verticle */
+.title_para-03
+{
+    margin: 0px;
+    padding: 0 0 0 0;
+    height: 17px;
+}
+.paragraph-03
+{
+    margin: 0px;
+    padding: 0 0 0 0;
+    width: 650px;
+    height: 228px;
+    float: left;
+}
+.paragraph-03 input
+{
+    margin-top: 15px;
+    margin-right: 8px;
+    padding: 0 0 0 0;
+    width: 100px;
+    height: 26px;
+    background-image: url(images/more_bt.png);
+    background-repeat: no-repeat;
+    float: right;
+    border: none;
+    cursor: pointer;
+}
+.paragraph-03 ul
+{
+    margin: 0px;
+    padding: 5px 0 0 2px;
+    height: 228px;
+}
+.paragraph-03 ul li
+{
+    margin: 0px;
+    padding: 0 0 0 0;
+    width: 130px;
+    height: 62px;
+    list-style-type: none;
+    float: left;
+}
+.paragraph-03 ul li a
+{
+    border: "none";
+}
+.paragraph-03 ul li.space_v-14
+{
+    margin: 0px;
+    padding: 14px 0 0 0;
+    width: 130px;
+    height: 62px;
+    list-style-type: none;
+    float: left;
+}
+.paragraph-03 ul li.space_h_v-14-40
+{
+    margin: 0px;
+    padding: 14px 0 0 40px;
+    width: 130px;
+    height: 62px;
+    list-style-type: none;
+    float: left;
+}
+
+.paragraph-04
+{
+    position: relative;
+    z-index: 2;
+    right: 0px;
+    top: 0px;
+    width: 650px;
+    height: 228px;
+    float: left;
+}
+.showmore
+{
+    margin: 0px;
+    padding: 15px 0 0 0;
+    position: relative;
+    right: 8px;
+    width: 650px;
+    height: 26px;
+    float: left;
+}
+.seeall
+{
+    margin: 0px;
+    padding: 0 0 0 5px;
+    background-image: url(images/all_mode_bt.png);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 26px;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+.on
+{
+    margin: 0px;
+    padding: 0 0 0 0;
+    background-image: url(images/back_mode_bt.png);
+    width: 100px;
+    height: 26px;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+.off
+{
+    margin: 0px;
+    padding: 0 0 0 0;
+    background-image: url(images/more_bt.png);
+    width: 100px;
+    height: 26px;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+.paragraph-04 ul
+{
+    margin: 0px;
+    padding: 5px 0 0 2px;
+    height: 228px;
+}
+.paragraph-04 ul li
+{
+    margin: 0px;
+    padding: 0 0 0 0;
+    width: 130px;
+    height: 62px;
+    list-style-type: none;
+    float: left;
+}
+.paragraph-04 ul li.space_v-14
+{
+    margin: 0px;
+    padding: 14px 0 0 0;
+    width: 130px;
+    height: 62px;
+    list-style-type: none;
+    float: left;
+}
+.paragraph-04 ul li.space_h_v-14-40
+{
+    margin: 0px;
+    padding: 14px 0 0 40px;
+    width: 130px;
+    height: 62px;
+    list-style-type: none;
+    float: left;
+}
+
+/* buckets icons */
+.content-02 .why
+{
+    background: url(images/021611_icon_why.png) no-repeat 26px 22px;
+}
+.content-02 .join
+{
+    background: url(images/021611_icon_join.png) no-repeat 26px 22px;
+}
+.content-02 .upgrade
+{
+    background: url(images/031811_icon_upgrade.png) no-repeat 26px 22px;
+}
+.content-02 .upgrade p.t-count
+{
+    padding: 10px 0 0 0;
+}
+
+/* inside page specific */
+
+/* page title */
+.content-03
+{
+    margin: 0;
+    padding: 0 0 0 0;
+    height: 49px;
+    width: 988px;
+    background: url(images/021611_bg_top.png) no-repeat 0 0;
+}
+.content-03 a, .content-03 input
+{
+    color: White;
+    font-size: 15px !important;
+    background-color: #2F548E;
+    border: none;
+    cursor:pointer;
+    padding:0px;
+    margin:0px;
+    line-height:15px !important;
+    height:15px !important;
+}
+.content-03 h2
+{
+    padding: 15px 0 0 36px;
+    font-weight: 100;
+    font-family: 'Segoe UI Light' , 'Segoe UI' , Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    color: #FFF;
+    line-height: 1.0em;
+    text-transform: uppercase;
+}
+
+/* page content */
+.content-04
+{
+    margin: 0;
+    padding: 15px 0 20px 0;
+    width: 988px;
+    background: url(images/021611_bg_mid.png) repeat-y 0 0;
+    line-height: 1.0em;
+}
+.content-04 h3
+{
+    margin: 0;
+    padding: 0 0 4px 0;
+    width: 970px;
+    font-weight: 100;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: #5477bb;
+    line-height: 1.286em;
+}
+.content-04 p
+{
+    padding: 0 0 0 0;
+    font-size: 13px;
+    color: #000;
+    line-height: 1.385em;
+}
+.content-04 ul
+{
+    padding: 0 0 0 0;
+}
+.content-04 li
+{
+    padding: 0 0 5px 0;
+    line-height: 1.286em;
+}
+
+
+
+/* list for the logos */
+.content-04 ul.joined
+{
+    padding: 20px 0 0 0;
+    list-style: none;
+}
+.content-04 ul.joined li
+{
+    padding: 0 15px;
+    line-height: 1.0em;
+    display: inline;
+}
+.content-04 .aside-01
+{
+    margin: 0;
+    padding: 25px 0 25px 15px;
+    width: 970px;
+}
+.content-04 .aside-01 input
+{
+    position: relative;
+    z-index: 2;
+    right: 220px;
+    top: -23px;
+    cursor: pointer;
+    float: right;
+    width: 106px;
+    height: 26px;
+    background: url(images/join_bt.png);
+    background-repeat: no-repeat;
+    border: none;
+}
+.content-04 .aside-01 a
+{
+    text-decoration: none;
+    color: #00b0f0;
+}
+.content-04 .aside-01 a:hover
+{
+    text-decoration: underline;
+}
+.content-04 .aside-01 h3
+{
+    margin: 0;
+    padding: 25px 0 0 0;
+    width: 970px;
+    text-align: left;
+    line-height: 1.0em;
+}
+.content-04 .aside-01 code
+{
+    margin: 5px 0 5px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    display: block;
+}
+.content-04 .aside-01 ol
+{
+    margin: 0;
+    padding: 25px 0 0 0px;
+    width: 955px;
+    list-style-type: none;
+}
+.content-04 .aside-01 ol li
+{
+    margin: 0;
+    padding: 0 0 0 0;
+}
+.content-04 .bg-btm
+{
+    background: url(images/021611_bg_3dline.png) no-repeat 71px 100%;
+}
+
+
+.content-04 .bg-top-00
+{
+    padding: 20px 0 0 71px;
+    background: url(images/021611_bg_3dline.png) no-repeat 71px 0px;
+}
+
+.content-04 .aside-02
+{
+    margin: 0 0 10px 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 293px;
+    height: 380px;
+    float: left;
+}
+
+.content-04 .value
+{
+    padding-right: 31px;
+    padding-left: 170px;
+    background: url(images/021611_icon_value.png) no-repeat 71px 14px;
+}
+.content-04 .move
+{
+    padding-right: 0;
+    padding-left: 138px;
+    border-left: 1px solid #E9E9E9;
+    background: url(images/021611_icon_upgrade.png) no-repeat 39px 14px;
+}
+
+/* download box */
+.content-04 .aside-03
+{
+    clear: both;
+    margin: 20px 0 0 0;
+    padding: 25px 0 0px 0px;
+    width: 855px;
+    height: 186px;
+    background: url(images/021611_bg_3dline.png) no-repeat 71px 0;
+}
+
+.content-04 .aside-03 .pod-01
+{
+    margin: 0;
+    padding: 0 50px 0 40px;
+    width: 152px;
+    float: left;
+}
+.content-04 .aside-03 .pod-01 div
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.content-04 .aside-03 .pod-02
+{
+    margin: 0;
+    padding: 0 0 0 0;
+    width: 613px;
+    float: left;
+    font-size: 13px;
+}
+.content-04 ul
+{
+    padding: 0 0 20px 15px;
+}
+.content-04 .aside-03 .pod-02 li
+{
+    font-size: 13px;
+}
+.content-04 .aside-03 .pod-02 p
+{
+    padding: 0 0 3px 0;
+}
+
+.content-04 .aside-03 .pod-02 div
+{
+    margin: 0;
+    padding: 0 0 20px 0;
+    width: 350px;
+}
+
+.content-04 .footer-note
+{
+    padding: 15px 0 0 0;
+    font-size: 11px;
+}
+.content-04 .oddrow
+{
+    background-color: #EEE;
+}
+.content-04 .chart
+{
+    display: none;
+}
+.content-04 .chart table
+{
+    margin-bottom: 15px;
+}
+.content-04 .chart table td.title
+{
+    text-align: left;
+    width: 380px;
+}
+.content-04 .chart table td.header
+{
+    font-weight: bold;
+}
+.content-04 .chart table td
+{
+    text-align: center;
+}
+
+
+/* page content */
+.content-06
+{
+    margin: 0;
+    padding: 15px 0 20px 0;
+    width: 988px;
+    background: url(images/021611_bg_mid.png) repeat-y 0 0;
+    max-height:1970px;
+    min-height:780px;
+    line-height: 1.0em;
+}
+.content
+{
+    margin: 0;
+    padding: 15px 15px 20px 15px;
+    background: url(images/021611_bg_mid.png) repeat-y 0 0;
+    height: auto;
+    line-height: 1.0em;
+}
+.content-06 h3
+{
+    margin: 0;
+    padding: 0 0 4px 0;
+    width: 970px;
+    font-weight: 100;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: #5477bb;
+    line-height: 1.286em;
+}
+.content-06 p
+{
+    padding: 0 0 0 15px;
+    width: 960px;
+    font-size: 14px;
+    color: #000;
+    line-height: 1.385em;
+}
+.content-06 ul
+{
+    padding: 0 0 0 0;
+}
+.content-06 li
+{
+    padding: 0 0 5px 0;
+    line-height: 1.286em;
+}
+
+
+
+/* list for the logos */
+.content-06 ul.joined
+{
+    padding: 20px 0 0 0;
+    list-style: none;
+}
+.content-06 ul.joined li
+{
+    padding: 0 15px;
+    line-height: 1.0em;
+    display: inline;
+}
+.content-06 .aside-01
+{
+    margin: 0;
+    padding: 25px 0 25px 15px;
+    width: 970px;
+}
+.content-06 .aside-01 input
+{
+    position: relative;
+    z-index: 2;
+    right: 220px;
+    top: -23px;
+    cursor: pointer;
+    float: right;
+    width: 106px;
+    height: 26px;
+    background: url(images/join_bt.png);
+    background-repeat: no-repeat;
+    border: none;
+}
+.content-06 .aside-01 a
+{
+    text-decoration: none;
+    color: #00b0f0;
+    font-weight: bold;
+}
+.content-06 .aside-01 a:hover
+{
+    text-decoration: underline;
+}
+.content-06 .aside-01 h3
+{
+    margin: 0;
+    padding: 25px 0 0 0;
+    width: 970px;
+    text-align: left;
+    line-height: 1.0em;
+}
+.content-06 .aside-01 code
+{
+    margin: 5px 0 5px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    display: block;
+}
+.content-06 .aside-01 ol
+{
+    margin: 0;
+    padding: 25px 0 0 0px;
+    width: 955px;
+    list-style-type: none;
+}
+.content-06 .aside-01 ol li
+{
+    margin: 0;
+    padding: 0 0 0 0;
+}
+
+
+
+.content-06 .bg-top-00
+{
+    padding: 20px 0 0 71px;
+    background: url(images/021611_bg_3dline.png);
+    background-repeat: no-repeat;
+}
+
+.content-06 .aside-02
+{
+    margin: 0 0 10px 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 293px;
+    height: 380px;
+    float: left;
+}
+
+.content-06 .value
+{
+    padding-right: 31px;
+    padding-left: 170px;
+    background: url(images/021611_icon_value.png) no-repeat 71px 14px;
+}
+.content-06 .move
+{
+    padding-right: 0;
+    padding-left: 138px;
+    border-left: 1px solid #E9E9E9;
+    background: url(images/021611_icon_upgrade.png) no-repeat 39px 14px;
+}
+
+/* download box */
+.content-06 .aside-03
+{
+    clear: both;
+    margin: 20px 0 0 0;
+    padding: 25px 0 0px 0px;
+    width: 855px;
+    height: 186px;
+    background: url(images/021611_bg_3dline.png) no-repeat 71px 0;
+}
+
+.content-06 .aside-03 .pod-01
+{
+    margin: 0;
+    padding: 0 50px 0 40px;
+    width: 152px;
+    float: left;
+}
+.content-06 .aside-03 .pod-01 div
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.content-06 .aside-03 .pod-02
+{
+    margin: 0;
+    padding: 0 0 0 0;
+    width: 613px;
+    float: left;
+    font-size: 13px;
+}
+.content-06 ul
+{
+    padding: 0 0 20px 15px;
+}
+.content-06 .aside-03 .pod-02 li
+{
+    font-size: 13px;
+}
+.content-06 .aside-03 .pod-02 p
+{
+    padding: 0 0 3px 0;
+}
+
+.content-06 .aside-03 .pod-02 div
+{
+    margin: 0;
+    padding: 0 0 20px 0;
+    width: 350px;
+}
+
+.content-06 .footer-note
+{
+    padding: 15px 0 0 0;
+    font-size: 11px;
+}
+.content-06 .oddrow
+{
+    background-color: #EEE;
+}
+.content-06 .chart
+{
+    display: none;
+}
+.content-06 .chart table
+{
+    margin-bottom: 15px;
+}
+.content-06 .chart table td.title
+{
+    text-align: left;
+    width: 380px;
+}
+.content-06 .chart table td.header
+{
+    font-weight: bold;
+}
+.content-06 .chart table td
+{
+    text-align: center;
+}
+
+/* page bottom */
+.content-05
+{
+    margin: 0;
+    padding: 0;
+    height: 22px;
+    width: 988px;
+    background: url(images/021611_bg_btm.png) no-repeat 0 0;
+    line-height: 1.0em;
+}
+
+/* country data */
+#mapHolder .world
+{
+    width: 460px;
+    height: 220px;
+    position: absolute;
+    top: 80px;
+    left: 65px;
+    display: none;
+}
+#mapHolder .world-on
+{
+    width: 460px;
+    height: 320px;
+    position: absolute;
+    top: 80px;
+    left: 65px;
+    display: inline;
+    font-family: 微软雅黑;
+    font-size: 10px;
+    color: #a1c9f7;
+}
+
+#mapHolder .country-usage
+{
+    display: none;
+    font-family: 微软雅黑;
+}
+#mapHolder .country-usage-on
+{
+    width: 440px;
+    height: 310px;
+    position: absolute;
+    top: 58px;
+    left: 31px;
+    display: inline;
+}
+
+#mapHolder .countryColumnOne
+{
+    width: 160px;
+    float: left;
+    color: #FFF;
+    font-size: 11px;
+}
+#mapHolder .countryColumnTwo
+{
+    width: 155px;
+    float: left;
+    color: #FFF;
+    font-size: 11px;
+}
+#mapHolder .countryColumnThree
+{
+    width: 120px;
+    float: right;
+    color: #FFF;
+    font-size: 11px;
+}
+#mapHolder .country-name
+{
+    padding: 0 0 0px 0;
+    width: 92px;
+    height: 21px;
+}
+#mapHolder .usage-icon
+{
+    padding: 0 0 0px 0;
+    width: 16px;
+}
+#mapHolder .percentage
+{
+    padding: 0 0 0px 0;
+}
+
+#mapHolder .argentina
+{
+    padding: 1px 2px 2px 2px;
+    background-color: #123260;
+    position: absolute;
+    top: 200px;
+    left: 75px;
+}
+#mapHolder .canada
+{
+    padding: 1px 2px 2px 2px;
+    background-color: #123260;
+    position: absolute;
+    top: 69px;
+    left: 20px;
+}
+#mapHolder .australia
+{
+    padding: 1px 2px 2px 2px;
+    background-color: #123260;
+    position: absolute;
+    top: 200px;
+    left: 350px;
+}
+#mapHolder .mainlandchina
+{
+    padding: 1px 2px 2px 2px;
+    background-color: #123260;
+    position: absolute;
+    top: 80px;
+    left: 180px;
+}
+#mapHolder .finland
+{
+    padding: 1px 2px 2px 2px;
+    background-color: #123260;
+    position: absolute;
+    top: 42px;
+    left: 195px;
+}
+#mapHolder .hongkongsar
+{
+    padding: 1px 2px 2px 2px;
+    background-color: #123260;
+    position: absolute;
+    top: 140px;
+    left: 328px;
+}
+#mapHolder .india
+{
+    padding: 1px 2px 2px 2px;
+    background-color: #123260;
+    position: absolute;
+    top: 142px;
+    left: 221px;
+}
+#mapHolder .japan
+{
+    padding: 1px 2px 2px 2px;
+    background-color: #123260;
+    position: absolute;
+    top: 84px;
+    left: 365px;
+}
+#mapHolder .newzealand
+{
+    padding: 1px 2px 2px 2px;
+    background-color: #123260;
+    position: absolute;
+    top: 245px;
+    left: 300px;
+}
+#mapHolder .norway
+{
+    padding: 1px 2px 2px 2px;
+    background-color: #123260;
+    position: absolute;
+    top: 45px;
+    left: 110px;
+}
+#mapHolder .saudiarabia
+{
+    padding: 1px 2px 2px 2px;
+    background-color: #123260;
+    position: absolute;
+    top: 125px;
+    left: 134px;
+}
+#mapHolder .singapore
+{
+    padding: 1px 2px 2px 2px;
+    background-color: #123260;
+    position: absolute;
+    top: 171px;
+    left: 338px;
+}
+#mapHolder .southafrica
+{
+    padding: 1px 2px 2px 2px;
+    background-color: #123260;
+    position: absolute;
+    top: 212px;
+    left: 205px;
+}
+#mapHolder .southkorea
+{
+    padding: 1px 2px 2px 2px;
+    background-color: #123260;
+    position: absolute;
+    top: 107px;
+    left: 353px;
+}
+#mapHolder .taiwan
+{
+    padding: 1px 2px 2px 2px;
+    background-color: #123260;
+    position: absolute;
+    top: 123px;
+    left: 347px;
+}
+#mapHolder .thailand
+{
+    padding: 1px 2px 2px 2px;
+    background-color: #123260;
+    position: absolute;
+    top: 158px;
+    left: 245px;
+}
+#mapHolder .turkey
+{
+    padding: 1px 2px 2px 2px;
+    background-color: #123260;
+    position: absolute;
+    top: 99px;
+    left: 139px;
+}
+#mapHolder .uk
+{
+    padding: 1px 2px 2px 2px;
+    background-color: #123260;
+    position: absolute;
+    top: 70px;
+    left: 110px;
+}
+#mapHolder .usa
+{
+    padding: 1px 2px 2px 2px;
+    background-color: #123260;
+    position: absolute;
+    top: 90px;
+    left: 0px;
+}
+#mapHolder .venezuela
+{
+    padding: 1px 2px 2px 2px;
+    background-color: #123260;
+    position: absolute;
+    top: 140px;
+    left: 75px;
+}
+#mapHolder .vietnam
+{
+    padding: 1px 2px 2px 2px;
+    background-color: #123260;
+    position: absolute;
+    top: 155px;
+    left: 326px;
+}
+#mapHolder .brazil
+{
+    padding: 1px 2px 2px 2px;
+    background-color: #123260;
+    position: absolute;
+    top: 170px;
+    left: 90px;
+}
+#mapHolder .russia
+{
+    padding: 1px 2px 2px 2px;
+    background-color: #123260;
+    position: absolute;
+    top: 30px;
+    left: 290px;
+}
+
+/* vtip */
+p#vtip
+{
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding: 10px;
+    width: 200px;
+    text-align: left;
+    left: 5px;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    border: 1px solid #a6c9e2;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    z-index: 9999;
+}
+p#vtip #vtipArrow
+{
+    position: absolute;
+    top: -10px;
+    left: 90%;
+}
+/*
+.metroImage
+{
+    background: #ffb70f;
+}*/
+.metroImage:hover
+{
+    background: #ffb70f;
+    padding: 2px;
+    margin: -3px -3px 1px -3px;
+    border: solid 1px #fff;
+}

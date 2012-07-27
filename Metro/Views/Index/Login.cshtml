@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Common.POCO.User
+<div class="content-03">
+    <h2 style="font-family: 微软雅黑; padding: 15px 0 0 0; text-indent: 15px;">
+        登录信息</h2>
+</div>
+<div class="content">
+    @using (Html.BeginForm())
+    {
+        <table style="width: 600px;">
+            <tr>
+                <td style="width:100px">
+                    @Html.LabelFor(a => a.LoginName)
+                </td>
+                <td>
+                    @Html.TextBoxFor(a => a.LoginName)
+                    @Html.ValidationMessageFor(a => a.LoginName)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(a => a.LoginPwd)
+                </td>
+                <td>
+                    @Html.PasswordFor(a => a.LoginPwd)
+                    @Html.ValidationMessageFor(a => a.LoginPwd)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <input type="submit" value="登录" />
+                </td>
+            </tr>
+        </table>
+    }
+</div>

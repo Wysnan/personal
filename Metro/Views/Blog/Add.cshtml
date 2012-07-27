@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Common.POCO.Blog
+<script type="text/javascript">
+	<!--
+    window.UEDITOR_HOME_URL = '/Scripts/ueditor/';
+	//-->
+</script>
+<script type="text/javascript" src="/Scripts/ueditor/editor_config.js"></script>
+<script type="text/javascript" src="/Scripts/ueditor/editor.js"></script>
+<link rel="stylesheet" href="/Scripts/ueditor/themes/default/ueditor.css" />
+<script language="javascript" type="text/javascript">
+    $(document).ready(function () {
+        var editor = new UE.ui.Editor();
+        editor.render('editor');
+        $("#btnSave").click(function () {
+            $("#Content").val(editor.getContent());
+        });
+    });
+</script>
+@using (Html.BeginForm())
+{ 
+    <div class="content-03">
+        <div style="float: right; margin-top: 20px; width: 100px; height: 30px;">
+            @Html.ActionLink("返回", "Index", "Blog") |
+            <input type="submit" value="保存" id="btnSave" />
+        </div>
+        <h2 style="font-family: 微软雅黑; padding: 15px 0 0 0; text-indent: 15px;">
+            新建博客</h2>
+    </div>
+    <div class="content">
+        <div class="blog_Addtitle">
+            @Html.LabelFor(a => a.Title) @Html.TextBoxFor(a => a.Title, new { @class = "title" })
+        </div>
+        <div class="blog_AddContent">
+            <script type="text/plain" id="editor"></script>
+        </div>
+        @Html.HiddenFor(a => a.Content)
+    </div>
+}

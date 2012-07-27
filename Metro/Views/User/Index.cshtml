@@ -1,0 +1,412 @@
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+<link href="/Content/User/styel.css" rel="stylesheet" type="text/css" />
+<script src="/Scripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.moveNext').click(function () {
+            //        if (!$(this).hasClass('flipArrowDown')) {
+            //            _gaq.push(['_trackEvent', 'pageAction', 'pageButtonClick', 'right']);
+            //        }
+            //        else {
+            //            _gaq.push(['_trackEvent', 'pageAction', 'pageButtonClick', 'left']);
+            //        }
+
+            //        if ($('#wrapper').hasClass('slideToMostPopular')) {
+            //            $('#wrapper').removeClass('slideToMostPopular');
+            //            $('#wrapper').removeClass('moveBackToMostPopular');
+            //            $('#wrapper').removeClass('moveToApps');
+            //            $('#wrapper').addClass('moveToFav');
+            //            $(this).removeClass('flipArrowDown');
+            //            $(this).addClass('flipArrowUp');
+            //        } else {
+            //            $('#wrapper').removeClass('moveToFav');
+            //            $('#wrapper').addClass('slideToMostPopular');
+            //            $(this).removeClass('flipArrowUp');
+            //            $(this).addClass('flipArrowDown');
+            //        }
+            var marginleft = $(".wrapperClass").css("marginLeft");
+            var newMarginLeft = "-925px";
+            if (marginleft == "-925px") {
+                newMarginLeft = "0px";
+            }
+            $(".wrapperClass").animate({
+                marginLeft: newMarginLeft
+            }, 1000);
+        });
+        $('.moveBack').click(function () {
+            var marginleft = $(".wrapperClass").css("marginLeft");
+            var newMarginLeft = "-1850px";
+            if (marginleft == "-1850px") {
+                newMarginLeft = "-925px";
+            }
+            $(".wrapperClass").animate({
+                marginLeft: newMarginLeft
+            }, 1000);
+        });
+    })
+    </script>
+<!-- firefox popup -->
+<div id="wrapper" class="wrapperClass" style="left: 345.5px;">
+    <div class="slot">
+        <div class="box">
+            <div class="header">
+                Most Used
+                <div class="subHeader">
+                    <span id="tutorial1" class="tutorial">Set as homepage</span></div>
+            </div>
+            <div id="mostPopularDiv" style="width: 831px; height: 501px; position: relative;
+                float: left;">
+                <div style="height: 215px; width: 298px; position: absolute; top: 0px; left: 548px;
+                    cursor: pointer; font-family: DroidSans; color: white; font-size: 34px; line-height: 215px;
+                    text-align: center; overflow: hidden; background-color: rgb(23, 142, 143);" id="mostPopular_0"
+                    class="square" tooltip="baike.baidu.com">
+                    <div style="height: 12px; width: 12px; position: absolute; top: 5px; left: 281px;
+                        z-index: 9999; cursor: pointer; display: none;" id="mostPopular_0_remove" class="square-remove">
+                    </div>
+                    <div style="width: 270px; height: 205px; padding: 5px; margin: auto; overflow: hidden;
+                        line-height: 205px;">
+                        baike.baidu.com</div>
+                </div>
+                <div style="background-color: rgb(199, 76, 48); height: 215px; width: 298px; position: absolute;
+                    top: 298px; left: 0px; cursor: pointer; font-family: DroidSans; color: white;
+                    font-size: 34px; line-height: 215px; text-align: center; overflow: hidden;" id="mostPopular_1"
+                    class="square" tooltip="tap.cn">
+                    <div style="height: 12px; width: 12px; position: absolute; top: 5px; left: 281px;
+                        z-index: 9999; display: none; cursor: pointer;" id="mostPopular_1_remove" class="square-remove">
+                    </div>
+                    <div style="width: 270px; height: 205px; padding: 5px; margin: auto; overflow: hidden;
+                        line-height: 205px;">
+                        tap.cn</div>
+                </div>
+                <div style="background-color: rgb(139, 61, 147); height: 138px; width: 302px; position: absolute;
+                    top: 77px; left: 234px; cursor: pointer; font-family: DroidSans; color: white;
+                    font-size: 30px; line-height: 138px; text-align: center; overflow: hidden;" id="mostPopular_2"
+                    class="square" tooltip="baidu.com">
+                    <div style="height: 12px; width: 12px; position: absolute; top: 5px; left: 285px;
+                        z-index: 9999; display: none; cursor: pointer;" id="mostPopular_2_remove" class="square-remove">
+                    </div>
+                    <div style="width: 274px; height: 128px; padding: 5px; margin: auto; overflow: hidden;
+                        line-height: 128px;">
+                        baidu.com</div>
+                </div>
+                <div style="background-color: rgb(125, 171, 52); height: 138px; width: 302px; position: absolute;
+                    top: 298px; left: 308px; cursor: pointer; font-family: DroidSans; color: white;
+                    font-size: 30px; line-height: 138px; text-align: center; overflow: hidden;" id="mostPopular_3"
+                    class="square" tooltip="news.163.com">
+                    <div style="height: 12px; width: 12px; position: absolute; top: 5px; left: 285px;
+                        z-index: 9999; display: none; cursor: pointer;" id="mostPopular_3_remove" class="square-remove">
+                    </div>
+                    <div style="width: 274px; height: 128px; padding: 5px; margin: auto; overflow: hidden;
+                        line-height: 128px;">
+                        news.163.com</div>
+                </div>
+                <div style="background-color: rgb(225, 118, 22); height: 138px; width: 222px; position: absolute;
+                    top: 0px; left: 0px; cursor: pointer; font-family: DroidSans; color: white; font-size: 26px;
+                    line-height: 138px; text-align: center; overflow: hidden;" id="mostPopular_4"
+                    class="square" tooltip="xahhw.com">
+                    <div style="height: 12px; width: 12px; position: absolute; top: 5px; left: 205px;
+                        z-index: 9999; display: none; cursor: pointer;" id="mostPopular_4_remove" class="square-remove">
+                    </div>
+                    <div style="width: 194px; height: 128px; padding: 5px; margin: auto; overflow: hidden;
+                        line-height: 128px;">
+                        xahhw.com</div>
+                </div>
+                <div style="background-color: rgb(55, 157, 207); height: 138px; width: 222px; position: absolute;
+                    top: 150px; left: 0px; cursor: pointer; font-family: DroidSans; color: white;
+                    font-size: 26px; line-height: 138px; text-align: center; overflow: hidden;" id="mostPopular_5"
+                    class="square" tooltip="discovery.163.com">
+                    <div style="height: 12px; width: 12px; position: absolute; top: 5px; left: 205px;
+                        z-index: 9999; display: none; cursor: pointer;" id="mostPopular_5_remove" class="square-remove">
+                    </div>
+                    <div style="width: 194px; height: 128px; padding: 5px; margin: auto; overflow: hidden;
+                        line-height: 128px;">
+                        discovery.163.com</div>
+                </div>
+                <div style="background-color: rgb(163, 43, 85); height: 102px; width: 222px; position: absolute;
+                    top: 298px; left: 620px; cursor: pointer;" id="mostPopular_6" class="square"
+                    tooltip="google.com.hk">
+                    <div style="height: 12px; width: 12px; position: absolute; top: 5px; left: 205px;
+                        z-index: 9999; display: none; cursor: pointer;" id="mostPopular_6_remove" class="square-remove">
+                    </div>
+                    <div style="width: 100%; height: 100%; background-image: url(http://mysites.incredibar.com/logos/google.com/m_size.png);
+                        background-position: 50% 50%; background-repeat: no-repeat no-repeat;" id="mostPopular_6_img">
+                    </div>
+                </div>
+                <div style="background-color: rgb(55, 119, 207); height: 102px; width: 222px; position: absolute;
+                    top: 410px; left: 620px; cursor: pointer; font-family: DroidSans; color: white;
+                    font-size: 26px; line-height: 102px; text-align: center; overflow: hidden;" id="mostPopular_7"
+                    class="square" tooltip="dict.youdao.com">
+                    <div style="height: 12px; width: 12px; position: absolute; top: 5px; left: 205px;
+                        z-index: 9999; display: none; cursor: pointer;" id="mostPopular_7_remove" class="square-remove">
+                    </div>
+                    <div style="width: 194px; height: 92px; padding: 5px; margin: auto; overflow: hidden;
+                        line-height: 92px;">
+                        dict.youdao.com</div>
+                </div>
+                <div style="background-color: rgb(125, 171, 52); height: 66px; width: 146px; position: absolute;
+                    top: 0px; left: 391px; cursor: pointer; font-family: DroidSans; color: white;
+                    font-size: 22px; line-height: 66px; text-align: center; overflow: hidden;" id="mostPopular_8"
+                    class="square" tooltip="cnbeta.com">
+                    <div style="height: 12px; width: 12px; position: absolute; top: 5px; left: 129px;
+                        z-index: 9999; display: none; cursor: pointer;" id="mostPopular_8_remove" class="square-remove">
+                    </div>
+                    <div style="width: 118px; height: 56px; padding: 5px; margin: auto; overflow: hidden;
+                        line-height: 56px;">
+                        cnbeta.com</div>
+                </div>
+                <div style="background-color: rgb(164, 157, 23); height: 66px; width: 146px; position: absolute;
+                    top: 0px; left: 234px; cursor: pointer; font-family: DroidSans; color: white;
+                    font-size: 22px; line-height: 66px; text-align: center; overflow: hidden;" id="mostPopular_9"
+                    class="square" tooltip="v.163.com">
+                    <div style="height: 12px; width: 12px; position: absolute; top: 5px; left: 129px;
+                        z-index: 9999; display: none; cursor: pointer;" id="mostPopular_9_remove" class="square-remove">
+                    </div>
+                    <div style="width: 118px; height: 56px; padding: 5px; margin: auto; overflow: hidden;
+                        line-height: 56px;">
+                        v.163.co</div>
+                </div>
+                <div style="background-color: rgb(188, 46, 48); height: 66px; width: 146px; position: absolute;
+                    top: 446px; left: 464px; cursor: pointer; font-family: DroidSans; color: white;
+                    font-size: 22px; line-height: 66px; text-align: center; overflow: hidden;" id="mostPopular_10"
+                    class="square" tooltip="war.163.com">
+                    <div style="height: 12px; width: 12px; position: absolute; top: 5px; left: 129px;
+                        z-index: 9999; display: none; cursor: pointer;" id="mostPopular_10_remove" class="square-remove">
+                    </div>
+                    <div style="width: 118px; height: 56px; padding: 5px; margin: auto; overflow: hidden;
+                        line-height: 56px;">
+                        war.163.</div>
+                </div>
+                <div style="background-color: rgb(55, 157, 207); height: 66px; width: 146px; position: absolute;
+                    top: 446px; left: 308px; cursor: pointer; font-family: DroidSans; color: white;
+                    font-size: 22px; line-height: 66px; text-align: center; overflow: hidden;" id="mostPopular_11"
+                    class="square" tooltip="user.qzone.qq.com">
+                    <div style="height: 12px; width: 12px; position: absolute; top: 5px; left: 129px;
+                        z-index: 9999; display: none; cursor: pointer;" id="mostPopular_11_remove" class="square-remove">
+                    </div>
+                    <div style="width: 118px; height: 56px; padding: 5px; margin: auto; overflow: hidden;
+                        line-height: 56px;">
+                        user.qzo</div>
+                </div>
+            </div>
+            <div class="search">
+                <div id="searhTerm">
+                    <input type="text" name="search" class="searchBox" id="sb1" size="31" maxlength="255"
+                        value="">
+                    <div class="glass">
+                    </div>
+                </div>
+                <div class="searchButton" id="searchButton1">
+                    Search
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="width: 98px; float: left">
+        <div class="moveNext">
+        </div>
+    </div>
+    <div class="slot">
+        <div class="box">
+            <div class="header">
+                Favorites
+                <div class="subHeader">
+                    <span id="tutorial2" class="tutorial">Set as homepage</span></div>
+            </div>
+            <div class="mostHitsWrapper">
+                <div id="mostHits1Div" class="mostHitsDiv" style="left: 0px;">
+                    <div style="background-color: rgb(139, 61, 147); height: 215px; width: 298px; position: absolute;
+                        top: 0px; left: 0px; cursor: pointer; font-family: DroidSans; color: white; font-size: 26px;
+                        line-height: 215px; text-align: center; overflow: hidden;" id="mostHits1_0" class="square"
+                        tooltip="localhost:54692/Administration/login.aspx?sessionValid">
+                        <div style="width: 270px; height: 205px; padding: 5px; margin: auto; overflow: hidden;
+                            line-height: 205px;">
+                            Surviscor [ ADMINISTRATION LOGIN ]</div>
+                    </div>
+                    <div style="background-color: rgb(125, 171, 52); height: 215px; width: 298px; position: absolute;
+                        top: 299px; left: 232px; cursor: pointer; font-family: DroidSans; color: white;
+                        font-size: 30px; line-height: 215px; text-align: center; overflow: hidden;" id="mostHits1_1"
+                        class="square" tooltip="projectforge.org/demo/wa/timesheetList;jsessionid=01CD">
+                        <div style="width: 270px; height: 205px; padding: 5px; margin: auto; overflow: hidden;
+                            line-height: 205px;">
+                            ProjectForge - List of time sheets</div>
+                    </div>
+                    <div style="background-color: rgb(71, 149, 69); height: 138px; width: 302px; position: absolute;
+                        top: 299px; left: 540px; cursor: pointer; font-family: DroidSans; color: white;
+                        font-size: 26px; line-height: 138px; text-align: center; overflow: hidden;" id="mostHits1_2"
+                        class="square" tooltip="theie6countdown.cn/educate-others.aspx">
+                        <div style="width: 274px; height: 128px; padding: 5px; margin: auto; overflow: hidden;
+                            line-height: 128px;">
+                            &#23545;Internet Explorer 6 &#35828;&#20877;&#35265;</div>
+                    </div>
+                    <div style="background-color: rgb(199, 76, 48); height: 138px; width: 302px; position: absolute;
+                        top: 77px; left: 308px; cursor: pointer; font-family: DroidSans; color: white;
+                        font-size: 30px; line-height: 138px; text-align: center; overflow: hidden;" id="mostHits1_3"
+                        class="square" tooltip="microsoftmag.eu/">
+                        <div style="width: 274px; height: 128px; padding: 5px; margin: auto; overflow: hidden;
+                            line-height: 128px;">
+                            MSmag.eu - Toute l'actualite Windows 8, Windows Phone
+                        </div>
+                    </div>
+                    <div style="background-color: rgb(163, 43, 85); height: 138px; width: 222px; position: absolute;
+                        top: 376px; left: 0px; cursor: pointer; font-family: DroidSans; color: white;
+                        font-size: 34px; line-height: 138px; text-align: center; overflow: hidden;" id="mostHits1_4"
+                        class="square" tooltip="rrting.com/English/oral/6/">
+                        <div style="width: 194px; height: 128px; padding: 5px; margin: auto; overflow: hidden;
+                            line-height: 128px;">
+                            &#33521;&#35821;&#21475;&#35821;8000&#21477;_&#33521;&#35821;&#21475;&#35821;_&#20154;&#20154;&#21548;&#21147;&#32593;</div>
+                    </div>
+                    <div style="background-color: rgb(164, 157, 23); height: 102px; width: 222px; position: absolute;
+                        top: 0px; left: 620px; cursor: pointer; font-family: DroidSans; color: white;
+                        font-size: 34px; line-height: 102px; text-align: center; overflow: hidden;" id="mostHits1_5"
+                        class="square" tooltip="ueditor.baidu.com/website/index.html">
+                        <div style="width: 194px; height: 92px; padding: 5px; margin: auto; overflow: hidden;
+                            line-height: 92px;">
+                            UEditor - &#39318;&#39029;</div>
+                    </div>
+                    <div style="background-color: rgb(55, 119, 207); height: 102px; width: 222px; position: absolute;
+                        top: 113px; left: 620px; cursor: pointer; font-family: DroidSans; color: white;
+                        font-size: 26px; line-height: 102px; text-align: center; overflow: hidden;" id="mostHits1_6"
+                        class="square" tooltip="jetbrains.com/webstorm/">
+                        <div style="width: 194px; height: 92px; padding: 5px; margin: auto; overflow: hidden;
+                            line-height: 92px;">
+                            The best JavaScript IDE with HTML Editor for Web devel</div>
+                    </div>
+                    <div style="height: 138px; width: 222px; position: absolute; top: 229px; left: 0px;
+                        overflow: hidden;" id="mostHits1_7" class="defaultBox">
+                        <img style="position: absolute; bottom: 0px; left: -3px;" src="/Content/user/image/defaultSites_138.png">
+                    </div>
+                    <div style="height: 66px; width: 146px; position: absolute; top: 448px; left: 696px;
+                        overflow: hidden;" id="mostHits1_8" class="defaultBox">
+                        <img style="position: absolute; bottom: 0px; left: -3px;" src="/Content/user/image/defaultSites_66.png">
+                    </div>
+                    <div style="height: 66px; width: 146px; position: absolute; top: 0px; left: 308px;
+                        overflow: hidden;" id="mostHits1_9" class="defaultBox">
+                        <img style="position: absolute; bottom: 0px; left: -3px;" src="/Content/user/image/defaultSites_66.png">
+                    </div>
+                    <div style="height: 66px; width: 146px; position: absolute; top: 0px; left: 463px;
+                        overflow: hidden;" id="mostHits1_10" class="defaultBox">
+                        <img style="position: absolute; bottom: 0px; left: -3px;" src="/Content/user/image/defaultSites_66.png">
+                    </div>
+                    <div style="height: 66px; width: 146px; position: absolute; top: 448px; left: 540px;
+                        overflow: hidden;" id="mostHits1_11" class="defaultBox">
+                        <img style="position: absolute; bottom: 0px; left: -3px;" src="/Content/user/image/defaultSites_66.png">
+                    </div>
+                </div>
+                <div id="mostHits2Div" class="mostHitsDiv" style="left: 858px;">
+                </div>
+                <div id="mostHits3Div" class="mostHitsDiv" style="left: 858px;">
+                </div>
+                <div id="mostHits4Div" class="mostHitsDiv" style="left: 858px;">
+                </div>
+                <div id="mostHits5Div" class="mostHitsDiv" style="left: 858px;">
+                </div>
+                <div id="mostHits6Div" class="mostHitsDiv" style="left: 858px;">
+                </div>
+                <div id="mostHits7Div" class="mostHitsDiv" style="left: 858px;">
+                </div>
+            </div>
+            <div class="search">
+                <div id="searhTerm">
+                    <input type="text" name="search" class="searchBox watermark" id="sb2" size="31" maxlength="255"
+                        value="">
+                    <div class="glass">
+                    </div>
+                </div>
+                <div class="searchButton" id="searchButton2">
+                    Search
+                </div>
+            </div>
+        </div>
+        <div class="pagingSeperator">
+        </div>
+        <div class="paging">
+            <div class="paging-wrapper" style="width: 72px;">
+                <div class="pagingButton pagingButtonActive" id="paging_1" style="display: block;">
+                    1</div>
+                <div class="pagingButton" id="paging_2">
+                    2</div>
+                <div class="pagingButton" id="paging_3">
+                    3</div>
+                <div class="pagingButton" id="paging_4">
+                    4</div>
+                <div class="pagingButton" id="paging_5">
+                    5</div>
+            </div>
+        </div>
+    </div>
+    <div style="width: 98px; float: left;">
+        <div class="moveBack">
+        </div>
+    </div>
+    <div class="slot">
+        <div class="box">
+            <div class="header">
+                Apps
+                <div class="subHeader">
+                    <span id="tutorial3" class="tutorial">Set as homepage</span></div>
+            </div>
+            <div id="appsDiv" style="width: 831px; height: 501px; position: relative; float: left;">
+                <div style="background-color: rgb(199, 76, 48); height: 160px; width: 160px; position: absolute;
+                    cursor: pointer; top: 0px; left: 0px;" id="apps_0" class="square">
+                    <div class="appBigIcon">
+                        <div class="iconBevel">
+                            <img src="/Content/user/image/chromestore_icon.png" class="iconImageBig"></div>
+                    </div>
+                </div>
+                <div style="width: 160px; position: absolute; top: 170px; left: 0px;" class="squareTitle">
+                    Web Store
+                </div>
+                <div style="background-color: rgba(32, 109, 147, 0.296875); height: 160px; width: 160px;
+                    position: absolute; top: 0px; left: 171px;" id="apps_1">
+                    <img src="/Content/user/image/appNoIcon.png" class="defaultIconImage">
+                </div>
+                <div style="background-color: rgba(32, 109, 147, 0.296875); height: 160px; width: 160px;
+                    position: absolute; top: 0px; left: 342px;" id="apps_2">
+                    <img src="/Content/user/image/appNoIcon.png" class="defaultIconImage">
+                </div>
+                <div style="background-color: rgba(32, 109, 147, 0.296875); height: 160px; width: 160px;
+                    position: absolute; top: 0px; left: 513px;" id="apps_3">
+                    <img src="/Content/user/image/appNoIcon.png" class="defaultIconImage">
+                </div>
+                <div style="background-color: rgba(32, 109, 147, 0.296875); height: 160px; width: 160px;
+                    position: absolute; top: 0px; left: 684px;" id="apps_4">
+                    <img src="/Content/user/image/appNoIcon.png" class="defaultIconImage">
+                </div>
+                <div style="background-color: rgba(32, 109, 147, 0.296875); height: 160px; width: 160px;
+                    position: absolute; top: 302px; left: 0px;" id="apps_5">
+                    <img src="/Content/user/image/appNoIcon.png" class="defaultIconImage">
+                </div>
+                <div style="background-color: rgba(32, 109, 147, 0.296875); height: 160px; width: 160px;
+                    position: absolute; top: 302px; left: 171px;" id="apps_6">
+                    <img src="/Content/user/image/appNoIcon.png" class="defaultIconImage">
+                </div>
+                <div style="background-color: rgba(32, 109, 147, 0.296875); height: 160px; width: 160px;
+                    position: absolute; top: 302px; left: 342px;" id="apps_7">
+                    <img src="/Content/user/image/appNoIcon.png" class="defaultIconImage">
+                </div>
+                <div style="background-color: rgba(32, 109, 147, 0.296875); height: 160px; width: 160px;
+                    position: absolute; top: 302px; left: 513px;" id="apps_8">
+                    <img src="/Content/user/image/appNoIcon.png" class="defaultIconImage">
+                </div>
+                <div style="background-color: rgba(32, 109, 147, 0.296875); height: 160px; width: 160px;
+                    position: absolute; top: 302px; left: 684px;" id="apps_9">
+                    <img src="/Content/user/image/appNoIcon.png" class="defaultIconImage">
+                </div>
+            </div>
+            <div class="search appSearch">
+                <div id="searhTerm">
+                    <input type="text" class="searchBox watermark" name="search" id="sb3" size="31" maxlength="255"
+                        value="">
+                    <div class="glass">
+                    </div>
+                </div>
+                <div class="searchButton" id="searchButton3">
+                    Search
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

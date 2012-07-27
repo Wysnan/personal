@@ -1,0 +1,89 @@
+﻿/* 20110216 */
+@import url("reset.css");
+@import url("master.css");
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+/*博客*/
+.blog_item
+{
+    margin: 10px auto auto auto;
+    border: 1px solid #E4E4E4;
+}
+.blog_item div
+{
+    padding: 3px;
+}
+.blog_item .list_content
+{
+    margin: 5px;
+    max-height: 100px;
+    overflow: hidden;
+}
+.blog_item .list_title
+{
+    background-color: #EEEEEE;
+    font-size: 16px;
+    line-height: 16px;
+}
+.list_foot
+{
+    border-top: 1px solid #E4E4E4;
+    font-size: 12px;
+    line-height: 12px;
+    color: #CFCFCF;
+}
+.title
+{
+    width: 600px;
+    height: 20px;
+}
+.blog_AddContent
+{
+    width: 100%;
+    margin-top: 10px;
+}
+.blog_EditTitle
+{
+    font-size: 20px !important;
+}
+.blog_EditTitle div
+{
+    font-size: 14px;
+    line-height: 14px;
+    color: #CFCFCF;
+    text-align:right;
+}
+.blog_operat
+{
+    float: right;
+    margin-top: 20px;
+    width: 180px;
+    height: 30px;
+}

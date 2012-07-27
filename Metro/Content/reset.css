@@ -1,0 +1,8 @@
+/* 20110216 L.Pocinwong */
+body, form, p, h1, h2, h3, h4, h5, h6, a, ul, ol, li, table, td, th { margin:0; }
+h1, h2, h3, h4, h5, h6 { line-height:1.0em; }
+body, form { padding:0; }
+object { display:block; }
+p { line-height:1.2em; letter-spacing:-0.00025em; }
+
+.clearboth { clear:both; margin:0; padding:0; height:1px; }

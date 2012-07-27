@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<Common.POCO.Blog>
+<div class="content-03">
+    <div style="float: right; margin-top: 20px; width: 100px; height: 30px;">
+        @Html.ActionLink("新建", "Add")
+    </div>
+    <h2 style="font-family: 微软雅黑; padding: 15px 0 0 0; text-indent: 15px;">
+        博客</h2>
+</div>
+<div class="content">
+    @foreach (var item in Model)
+    {
+        <div class="blog_item">
+            <div class="list_title">@Html.ActionLink(item.Title, "Detail", new { id=item.ID})</div>
+            <div class="list_content">
+               @Html.Raw(item.Content)</div>
+            <div class="list_foot">
+             @item.CreateTime.ToString("g")&nbsp;&nbsp;@item.User.Name</div>
+        </div>
+    }
+</div>

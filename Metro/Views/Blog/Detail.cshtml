@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Common.POCO.Blog
+@using (Html.BeginForm())
+{ 
+    <div class="content-03">
+        <div class="blog_operat">
+            @Html.ActionLink("返回", "Index", "Blog") |
+            @Html.ActionLink("编辑", "Edit", "Blog", new { id = Model.ID }, null) |
+            @Html.ActionLink("删除", "Delete", "Blog", new { id = Model.ID }, new { @class = "delete" })
+        </div>
+        <h2 style="font-family: 微软雅黑; padding: 15px 0 0 0; text-indent: 15px;">
+            博客</h2>
+    </div>
+    <div class="content">
+        <div class="blog_EditTitle">
+            <h3>@Html.DisplayFor(a => a.Title)</h3>
+            <div>
+                @Model.CreateTime.ToString("g")&nbsp;&nbsp;@Model.User.Name
+            </div>
+        </div>
+        <div class="blog_AddContent">
+            @Html.Raw(Model.Content)
+        </div>
+    </div>
+}

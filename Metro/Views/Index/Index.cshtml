@@ -1,0 +1,152 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".contentArticle").mouseenter(function () {
+            $(this).children(".linkImg").stop(true, false).animate({ marginTop: '-100px' }, 250);
+        });
+        $(".contentArticle").mouseleave(function () {
+            $(this).children(".linkImg").stop(true, false).animate({ marginTop: '0' }, 250);
+        });
+    })
+</script>
+<div class="content-03">
+    <h2 style="font-family: 微软雅黑; padding: 15px 0 0 0; text-indent: 15px;">
+        艾赐克</h2>
+</div>
+<div class="content-06">
+    <!-- start top -->
+    <p style="width: 820px; float: left;">
+        艾赐克</p>
+    <div style="float: right; margin-right: 20px; margin-top: 10px; width: 100px; height: 26px;">
+    </div>
+    <br>
+    <br>
+    <br>
+    <div style="margin: 0px; padding: 25px 0 0 0; width: 984px;">
+        <ul style="margin: 0px; padding: 0 0 0 2px; width: 984px;">
+            <li style="float: left; width: 465px; height: 200px; list-style-type: none;">
+                <div class="zoneArticle windows-8">
+                    <article class="contentArticle">
+                        <a class="linkImg" href="/Blog/Index" style="margin-top: 0px; "><img src="/Content/images/home_study.png"  width="465" height="200" border="0"></a>
+                        <header class="minHeaderArticle">
+                        @{
+                            
+                            var blogModels = ViewBag.Blogs as List<Common.POCO.Blog>;
+                            if (blogModels != null)
+                            {
+                                foreach (var item in blogModels)
+                                {
+                                   <p class="minAuthor">@Html.ActionLink(item.Title, "Detail", "Blog", new { id = item.ID }, new { target = "_blank" })</p>
+                                }
+                            }
+                            }
+                        </header>
+                    </article>
+                </div>
+            </li>
+            <li style="float: right; width: 465px; height: 200px; list-style-type: none;">
+                <div class="zoneArticle windows-8">
+                    <article class="contentArticle">
+                        <a class="linkImg" href="#" style="margin-top: 0px; "><img src="/Content/images/home_mood.png"  width="465" height="200" border="0"></a>
+                        <header class="minHeaderArticle">
+                            <h3><a href="#">Le Media Center et la lecture des DVD en options sur Windows 8</a></h3>
+                            <p class="minDate">06 Mai</p>
+                            <p class="minAuthor">par <a href="http://www.microsoftmag.eu/user/Jbontemps/">Jbontemps</a></p>
+                        </header>
+                    </article>
+                </div>
+            </li>
+            <li style="float: left; width: 95px; height: 178px; list-style-type: none;">
+                <img src="/Content/MetroImage/num_01.gif" alt="" width="92" height="175" border="0"></li>
+            <li style="float: left; width: 366px; height: 178px; list-style-type: none;">
+                <p style="width: 366px; font-size: 12px; padding: 25px 0 0 0;">
+                    &nbsp;</p>
+                aicike </li>
+            <li style="float: right; width: 95px; height: 178px; list-style-type: none;">
+                <img src="/Content/MetroImage/num_02.gif" alt="" width="92" height="175" border="0"></li>
+            <li style="float: right; width: 355px; height: 178px; list-style-type: none;">
+                <p style="width: 345px; font-size: 12px; padding: 45px 0 0 0;">
+                </p>
+                aicike </li>
+        </ul>
+        <ul style="margin: 0px; padding: 0 0 0 2px; width: 984px;">
+            <li style="float: left; width: 465px; height: 200px; list-style-type: none;">
+                <img src="/Content/images/home_play.png" alt="" width="465" height="200" border="0"></li>
+            <li style="float: right; width: 465px; height: 200px; list-style-type: none;">
+                <img src="/Content/images/home_live.png" alt="" width="465" height="200" border="0"></li>
+            <li style="float: left; width: 95px; height: 178px; list-style-type: none;">
+                <img src="/Content/MetroImage/num_03.gif" alt="" width="92" height="175" border="0"></li>
+            <li style="float: left; width: 366px; height: 178px; list-style-type: none;">
+                <p style="width: 366px; font-size: 12px; padding: 25px 0 0 0;">
+                    &nbsp;</p>
+                aicike </li>
+            <li style="float: right; width: 95px; height: 178px; list-style-type: none;">
+                <img src="/Content/MetroImage/num_04.gif" alt="" width="92" height="175" border="0"></li>
+            <li style="float: right; width: 355px; height: 178px; list-style-type: none;">
+                <p style="width: 345px; font-size: 12px; padding: 45px 0 0 0;">
+                </p>
+                aicike </li>
+        </ul>
+        @*  <ul style="margin: 0px; padding: 0 0 0 2px; width: 984px;">
+            <li style="float: left; width: 465px; height: 200px; list-style-type: none;">
+                <img src="/Content/MetroImage/sub_img_005.png" alt="" width="465" height="200" border="0"></li>
+            <li style="float: right; width: 465px; height: 200px; list-style-type: none;">
+                <img src="/Content/MetroImage/sub_img_006.png" alt="" width="465" height="200" border="0"></li>
+            <li style="float: left; width: 95px; height: 178px; list-style-type: none;">
+                <img src="/Content/MetroImage/num_05.gif" alt="" width="92" height="175" border="0"></li>
+            <li style="float: left; width: 366px; height: 178px; list-style-type: none;">
+                <p style="width: 366px; font-size: 12px; padding: 25px 0 0 0;">
+                    &nbsp;</p>
+                aicike
+            </li>
+            <li style="float: right; width: 95px; height: 178px; list-style-type: none;">
+                <img src="/Content/MetroImage/num_06.gif" alt="" width="92" height="175" border="0"></li>
+            <li style="float: right; width: 355px; height: 178px; list-style-type: none;">
+                <p style="width: 345px; font-size: 12px; padding: 45px 0 0 0;">
+                aicike
+                </p>
+            </li>
+        </ul>
+      <ul style="margin: 0px; padding: 0 0 0 2px; width: 984px;">
+            <li style="float: left; width: 465px; height: 200px; list-style-type: none;">
+                <img src="/Content/MetroImage/sub_img_007.png" alt="" width="465" height="200" border="0"></li>
+            <li style="float: right; width: 465px; height: 200px; list-style-type: none;">
+                <img src="/Content/MetroImage/sub_img_008.png" alt="" width="465" height="200" border="0"></li>
+            <li style="float: left; width: 95px; height: 178px; list-style-type: none;">
+                <img src="/Content/MetroImage/num_07.gif" alt="" width="92" height="175" border="0"></li>
+            <li style="float: left; width: 366px; height: 178px; list-style-type: none;">
+                <p style="width: 366px; font-size: 12px; padding: 25px 0 0 0;">
+                    &nbsp;</p>
+                aicike
+            </li>
+            <li style="float: right; width: 95px; height: 178px; list-style-type: none;">
+                <img src="/Content/MetroImage/num_08.gif" alt="" width="92" height="175" border="0"></li>
+            <li style="float: right; width: 355px; height: 178px; list-style-type: none;">
+                <p style="width: 345px; font-size: 12px; padding: 45px 0 0 0;">
+                    aicike</p>
+            </li>
+        </ul>
+        <ul style="margin: 0px; padding: 0 0 0 2px; width: 984px;">
+            <li style="float: left; width: 465px; height: 200px; list-style-type: none;">
+                <img src="/Content/MetroImage/sub_img_009.png" alt="" width="465" height="200" border="0"></li>
+            <li style="float: right; width: 465px; height: 200px; list-style-type: none;"><a
+                href="#" target="_blank">
+                <img src="/Content/MetroImage/sub_img_010.png" alt="" width="465" height="200" border="0"></a></li>
+            <li style="float: left; width: 95px; height: 178px; list-style-type: none;">
+                <img src="/Content/MetroImage/num_09.gif" alt="" width="92" height="175" border="0"></li>
+            <li style="float: left; width: 366px; height: 178px; list-style-type: none;">
+                <p style="width: 366px; font-size: 12px; padding: 25px 0 0 0;">
+                    &nbsp;</p>
+                aicike
+            </li>
+            <li style="float: right; width: 465px; height: 178px; list-style-type: none;">
+                <p style="width: 465px; font-size: 12px; padding: 5px 0 0 0;">
+                    &nbsp;</p>
+                aicike
+            </li>
+        </ul>*@
+    </div>
+</div>
